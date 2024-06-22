@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Whisper&display=swap");
+@-webkit-keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1; } }
+@keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1; } }
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+body {
+  background: url(../../img/bg-3.png) no-repeat fixed;
+  background-size: cover; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px; }
+  .container .card {
+    background: rgba(255, 255, 255, 0.716);
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000050;
+    padding: 30px;
+    width: 400px;
+    -webkit-animation: slide-in-blurred-top 2s cubic-bezier(0.23, 1, 0.32, 1) both;
+    animation: slide-in-blurred-top 2s cubic-bezier(0.23, 1, 0.32, 1) both; }
+    .container .card #msgError {
+      text-align: center;
+      color: #fff;
+      background-color: #ff1234;
+      padding: 10px;
+      border-radius: 4px;
+      display: none; }
+    .container .card #msgSuccess {
+      text-transform: lowercase;
+      text-align: center;
+      color: #000;
+      background-color: #bbffbe;
+      padding: 10px;
+      border-radius: 4px;
+      display: none; }
+    .container .card h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #272262; }
+    .container .card .label-float {
+      position: relative;
+      padding-top: 13px;
+      margin-top: 5%;
+      margin-bottom: 5%; }
+      .container .card .label-float input {
+        width: 100%;
+        padding: 5px 5px;
+        display: inline-block;
+        border: 0;
+        border-bottom: 2px solid #272262;
+        background: transparent;
+        outline: none;
+        min-width: 180px;
+        font-size: 16px;
+        transition: all .3s ease-out;
+        border-radius: 0; }
+        .container .card .label-float input:focus {
+          border-bottom: 2px solid #4038a0; }
+      .container .card .label-float #nome {
+        text-transform: capitalize; }
+      .container .card .label-float #usuario {
+        text-transform: lowercase; }
+      .container .card .label-float label {
+        color: #272262;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 13px;
+        transition: all .3s ease-out; }
+      .container .card .label-float .fa-eye {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        cursor: pointer;
+        color: #272262; }
+      .container .card .label-float #msgCaps {
+        color: #fff;
+        background-color: #ff1234;
+        padding: 5px;
+        border-radius: 0 0 20px 20px;
+        font-size: 17px;
+        display: none;
+        justify-content: center; }
+    .container .card .label-float input:focus + label,
+    .container .card .label-float input:valid + label {
+      font-size: 13px;
+      margin-top: 0;
+      color: #4038a0; }
+    .container .card button, .container .card a {
+      background-color: transparent;
+      border-color: #272262;
+      color: #272262;
+      padding: 7px;
+      font-weight: 500;
+      font-size: 12pt;
+      margin-top: 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      outline: none;
+      transition: all .5s ease-out; }
+      .container .card button:hover, .container .card a:hover {
+        background-color: #272262;
+        color: #fff; }
+    .container .card .justify-center {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 32px; }
+    .container .card p {
+      color: #272262;
+      font-size: 14pt;
+      text-align: center; }
+
+.autor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  position: absolute;
+  bottom: 80px;
+  right: 90px;
+  -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.61, 0.355, 1) 2s both;
+  animation: tracking-in-expand 2s cubic-bezier(0.215, 0.61, 0.355, 1) 2s both; }
+  .autor .autor-image {
+    width: 20%; }
+  .autor .autor-name {
+    font-family: 'Whisper', cursive;
+    font-weight: normal;
+    font-size: 36px;
+    color: rgba(255, 255, 255, 0.739);
+    word-spacing: 3px; }
+
+/*# sourceMappingURL=cadastro.css.map */

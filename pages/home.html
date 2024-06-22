@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/css/home.css">
+    <script src="https://kit.fontawesome.com/37a712e0d3.js" crossorigin="anonymous"></script>
+    <script src="../scripts/home.js" defer></script>
+
+    <title>Home | Marcus Gaspar</title>
+</head>
+<header>
+    <h1 id="nameUser"> </h1>
+    <button onclick="logout()">Sair</button>
+
+</header>
+<body>
+    <img id="img-developer" src="../img/Marcus - Perfil.JPG" alt="">
+
+    <main>
+
+        <section class="container">
+            <div class="mensagem">
+                <h1>Recado do desenvolvedor</h1>
+                <p>Ol&aacute;, tudo bem? Me chamo Marcus Vin&iacute;cius, prazer em lhe conhecer.<br />
+                    Fico muito feliz de verdade em saber que voc&ecirc; est&aacute; por aqui conhecendo um pouco do meu trabalho.</p>
+                <p>Voc&ecirc; acaba de navegar em um dos meus dos meus projetos, onde o mesmo tem o objetivo de voc&ecirc; conhecer a capacidade que tenho em desenvolver um sistema de acesso, que vai desde o <strong>cadastro</strong> at&eacute; o <strong>login</strong> com valida&ccedil;&atilde;o interna via token.</p>
+            </div>
+            
+            <div class="contato">
+                <h2>Você pode entrar em contato comigo</h2>
+                <p>Escolha a melhor forma que você queira entrar em contato, será um prazer lhe atender</p>
+                <ul class="icons-sociais">
+                    <li><a href="https://www.facebook.com/gaspar.dev1/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/marcusgasparr/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://wa.me/5521967417903?&text=Olá%20Marcus,%20estive%20acessando%20seu%20site%20e%20decidi%20entrar%20em%20contato%20com%20você." 
+                        target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp-square"></i></a></li>
+                    <li><a href="mailto:viniciusgaspar01@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <section id="nullLogin-popup" class="nullLogin-container">
+        <div class="popupNull">
+            <h1>Você precisa estar<br>logado para continuar</h1>
+            <button onclick="logout()">Logar</button>
+        </div>
+    </section>
+</body>

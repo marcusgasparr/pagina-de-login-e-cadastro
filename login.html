@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/css/login.css">
+    <script src="https://kit.fontawesome.com/37a712e0d3.js" crossorigin="anonymous"></script>
+    <script src="./scripts/loginScripts.js" defer></script>
+
+    <title>Login | Marcus Gaspar</title>
+</head>
+<body class="container">
+
+    <main>
+        <section class="cardInfo">
+            <img class="pc-login" src="./img/tela-de-login.png">
+            <h1>Marcus Gaspar</h1>
+            <p>Desenvolvedor Front-end</p>
+        </section>
+        
+        <section class="cardLogin">
+            <div class="card">
+                <h1>Entrar</h1>
+                <div id="msgError"></div>
+                
+                <div class="label-float">
+                    <input type="text" id="usuario" placeholder="" required>
+                    <label id="userLabel" for="usuario">Usuário</label>
+                </div>
+                
+                <div class="label-float">
+                    <input type="password" id="senha" placeholder="" required>
+                    <label id="senhaLabel" for="senha">Senha</label>
+                    <i class="fa-regular fa-eye"></i>
+                </div>
+    
+                <div class="justify-center">
+                    <button onclick="entrar()">Entrar</button>
+                </div>
+    
+                <div class="justify-center">
+                    <hr>
+                </div>
+    
+                <p>Primeira vez aqui?
+                    <a href="./pages/cadastro.html">Cadastre-se</a>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <section class="autor">
+        <object class="autor-image" data="../../img/Marcus-Perfil-Redondo.svg" type="image/svg+xml"></object>
+        <h1 class="autor-name">Marcus Gaspar</h1>
+    </section>
+</body>
+</html>
