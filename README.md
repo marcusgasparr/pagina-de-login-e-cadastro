@@ -1,4 +1,4 @@
-Página de cadastro
+Página de Login e Cadastro com Validação
 
 * Entrada com login e senha
 * Cadastro completo
